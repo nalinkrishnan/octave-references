@@ -21,6 +21,8 @@ Every build should support these triggers, which decide which accounts enter a r
 | `job-change` | Champion or buyer moves into a target account | Known relationship, new seat |
 | `buying-signal` | Hiring, funding, launch, tech change | Event that creates the need |
 
+This list is confirmed (2026-09-29).
+
 Add a trigger here first (and to `group.json` → `trigger_types`), then to the builds.
 
 ## Shared contract

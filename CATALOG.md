@@ -49,8 +49,8 @@ Mine recorded calls and conversations for patterns, and post what the team shoul
 
 | Architecture | Platform | Destination | Summary | Status |
 |--------------|----------|-------------|---------|--------|
-| [customervoice-slack](architectures/extract-insights/customervoice-slack/) |  | slack | _not written yet_ | stub |
-| [repvoice-slack](architectures/extract-insights/repvoice-slack/) |  | slack | _not written yet_ | stub |
+| [customervoice-slack](architectures/extract-insights/customervoice-slack/) | tbd | slack | _not written yet_ | stub |
+| [repvoice-slack](architectures/extract-insights/repvoice-slack/) | tbd | slack | _not written yet_ | stub |
 
 ## Outbound
 
@@ -80,7 +80,7 @@ On-demand deal assets an AE asks an LLM for: one-pagers, call prep, account plan
 
 | Architecture | Platform | Destination | Summary | Status |
 |--------------|----------|-------------|---------|--------|
-| [llm-abm](architectures/sales/llm-abm/) | llm |  | _not written yet_ | stub |
-| [llm-callprep](architectures/sales/llm-callprep/) | llm |  | _not written yet_ | stub |
-| [llm-followup](architectures/sales/llm-followup/) | llm |  | _not written yet_ | stub |
-| [llm-onepager](architectures/sales/llm-onepager/) | llm |  | _not written yet_ | stub |
+| [llm-abm](architectures/sales/llm-abm/) | llm | chat | _not written yet_ | stub |
+| [llm-callprep](architectures/sales/llm-callprep/) | llm | chat | _not written yet_ | stub |
+| [llm-followup](architectures/sales/llm-followup/) | llm | chat | _not written yet_ | stub |
+| [llm-onepager](architectures/sales/llm-onepager/) | llm | chat | _not written yet_ | stub |

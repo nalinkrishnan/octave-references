@@ -7,7 +7,7 @@ Builds in this group differ by **whose voice** is being analyzed:
 - `customervoice`: what buyers and customers say (pains, objections, competitors named, language they use) → feeds messaging, positioning, and the Octave library.
 - `repvoice`: what reps say (talk tracks that land, value props used, where they go off-message) → feeds coaching and enablement.
 
-Build ids are `<voice>-<destination>`. Both deliver to Slack today.
+Build ids are `<voice>-<destination>`. Both deliver to Slack today. Platform is `tbd` until the first one is built.
 
 ## Shared contract
 

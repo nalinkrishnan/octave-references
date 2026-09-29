@@ -2,7 +2,7 @@
 
 > On-demand deal assets an AE asks an LLM for: one-pagers, call prep, account plans, and follow-ups, grounded in the Octave library.
 
-Builds in this group run in an LLM client connected to Octave (Claude, ChatGPT, or anything that speaks MCP). No orchestration platform. The build is the prompt, skill, or project instructions plus the Octave setup it depends on.
+Builds in this group run in an LLM client connected to Octave (Claude, ChatGPT, or anything that speaks MCP). No orchestration platform. The build is the prompt, skill, or project instructions plus the Octave setup it depends on. Destination is always `chat`: the asset comes back in the conversation.
 
 | Build | Produces |
 |-------|----------|

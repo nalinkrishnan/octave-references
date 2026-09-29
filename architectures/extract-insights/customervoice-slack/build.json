@@ -2,7 +2,7 @@
   "id": "customervoice-slack",
   "title": "Customer Voice Slack",
   "group": "extract-insights",
-  "platform": "{{clay | cargo | claude | n8n | llm | \u2026}}",
+  "platform": "tbd",
   "destination": "slack",
   "status": "stub",
   "summary": "{{One sentence: what this build does, end to end.}}",

@@ -3,7 +3,7 @@
   "title": "LLM ABM",
   "group": "sales",
   "platform": "llm",
-  "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+  "destination": "chat",
   "status": "stub",
   "summary": "{{One sentence: what this build does, end to end.}}",
   "problem": "{{The GTM problem it solves, in the buyer's words.}}",
