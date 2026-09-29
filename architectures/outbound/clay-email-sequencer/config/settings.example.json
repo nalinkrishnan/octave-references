@@ -1,0 +1,7 @@
+{
+  "_comment": "Copy to settings.local.json and replace every {{PLACEHOLDER}}. settings.local.json is gitignored.",
+  "company": {
+    "name": "{{YOUR_COMPANY_NAME}}",
+    "domain": "{{yourcompany.com}}"
+  }
+}

@@ -20,19 +20,19 @@ Run `python3 scripts/build_catalog.py` from the library root first, so the catal
 ## Search
 
 1. Restate the new build in one line: trigger → steps → output, the systems available, and the runtime they want.
-2. Read `catalog.json`. Score each architecture on:
+2. Read `catalog.json` (a list of groups, each with its `builds`). First pick the group: the GTM job (`abm`, `outbound`, `extract-insights`, `sales`). Read that group's `GROUP.md` for the shared contract and trigger types. Then score each architecture on:
    - **Problem / outcome match** (highest weight): same GTM job, even if different systems
+   - **Platform + destination**: an exact `platform`/`destination` match beats a partial one; a same-group build on another platform still gives the shared logic
    - **Octave capabilities overlap**: same tools (`qualify_company`, `run_email_agent`, …)
    - **Systems overlap**: required systems the user has; note any they lack and whether `systems.swappable` covers it
-   - **Runtime match**: skill vs N8N vs Trigger.dev vs script
    - **Tags / category**
-3. For the top 3, open `README.md` and `ARCHITECTURE.md` to confirm the fit. Don't rank from metadata alone.
+3. For the top 3, open `README.md` and `ARCHITECTURE.md` to confirm the fit. Don't rank from metadata alone. Skip `stub` builds as a starting point (no content yet), but mention one if it's the exact slot, plus the group's `shared/` components.
 4. If nothing scores well, say so plainly. Name the nearest partial matches and which components are reusable (e.g. "the CRM gate from X, the Slack delivery from Y").
 
 ## Output
 
 ```
-Best match: <title> (architectures/<id>/)
+Best match: <title> (architectures/<group>/<id>/) · <status>
   Why: <1–2 lines>
   Reuse as-is: <components>
   Change: <components + what changes>

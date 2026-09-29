@@ -7,17 +7,19 @@ description: Port a finished customer build into the public octave-references li
 
 The library is a **public** repo. Every step here is about getting the logic in and keeping the customer out.
 
-## 1. Decide: new or extend
+## 1. Find the slot
 
-Run `/find-reference-architecture` against the source build. If an existing architecture covers the same GTM job, extend it (add a variant section, new config options, bump `derived_from_builds`) instead of creating a near-duplicate.
+Run `/find-reference-architecture` against the source build. Pick the group (the job) and the platform + destination.
 
-## 2. Scaffold
+- **Stub exists for that slot:** fill it in. Set `status` to `draft`.
+- **Build already has content:** extend it (new config options, a variant section, bump `derived_from_builds`) instead of making a near-duplicate.
+- **No slot:** `python3 scripts/new_architecture.py <group-id> <build-id>`. If no group fits the job, `python3 scripts/new_group.py <group-id> "Title"` first, and fill in its `GROUP.md` + `group.json`.
 
-```bash
-python3 scripts/new_architecture.py <build-id>
-```
+`build-id` names platform + job + destination, never the customer (`n8n-abm-hubspot`, not `acme-abm`). Add the customer's name to `.scrub-denylist.txt` now.
 
-`build-id` names the *type* of build, never the customer (`inbound-reverse-email`, not `acme-prometheus`). Add the customer's name to `.scrub-denylist.txt` now.
+## 2. Separate shared from platform-specific
+
+Anything that would be the same on another platform (ranking rubric, output schema, gate rules, prompts, brief template) goes in the group's `shared/`, not the build. List what the build uses in `build.json` → `uses_shared`. If you change an existing shared component, check the other builds that use it.
 
 ## 3. Inventory the source build
 

@@ -1,11 +1,13 @@
 {
   "id": "{{build-id}}",
   "title": "{{Human-readable title}}",
-  "category": "{{outbound | inbound | account-planning | enrichment | qualification | content | signals | crm-hygiene | enablement | other}}",
-  "status": "draft",
+  "group": "{{group-id}}",
+  "platform": "{{clay | cargo | claude | n8n | llm | …}}",
+  "destination": "{{slack | salesforce | hubspot | custom | …}}",
+  "status": "stub",
   "summary": "{{One sentence: what this build does, end to end.}}",
   "problem": "{{The GTM problem it solves, in the buyer's words.}}",
-  "trigger": "{{What starts a run: schedule, webhook, manual, CRM event, list upload.}}",
+  "triggers": ["{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"],
   "inputs": ["{{e.g. list of target domains}}"],
   "outputs": ["{{e.g. ranked account list posted to Slack}}"],
   "systems": {
@@ -14,11 +16,11 @@
     "swappable": {}
   },
   "octave_capabilities": ["{{e.g. qualify_company, run_email_agent, deep_web_research}}"],
-  "runtime": "{{claude-code-skill | n8n | trigger.dev | python-script | mixed}}",
+  "uses_shared": [],
   "complexity": "{{low | medium | high}}",
   "setup_time": "{{e.g. 2 hours}}",
   "tags": [],
   "related": [],
-  "derived_from_builds": 1,
+  "derived_from_builds": 0,
   "last_updated": "{{YYYY-MM-DD}}"
 }

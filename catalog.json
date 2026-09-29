@@ -1,1 +1,1187 @@
-[]
+[
+  {
+    "id": "abm",
+    "title": "ABM",
+    "summary": "Pick the accounts worth working now, research them against the Octave library, and hand a ranked list with briefs to the team where they work.",
+    "axes": {
+      "platform": [
+        "clay",
+        "claude",
+        "cargo",
+        "n8n"
+      ],
+      "destination": [
+        "slack",
+        "salesforce",
+        "hubspot",
+        "custom"
+      ]
+    },
+    "trigger_types": [
+      "scheduled",
+      "web-visit",
+      "wake-the-dead",
+      "job-change",
+      "buying-signal"
+    ],
+    "path": "architectures/abm",
+    "builds": [
+      {
+        "id": "cargo-abm-custom",
+        "title": "Cargo ABM Custom",
+        "group": "abm",
+        "platform": "cargo",
+        "destination": "custom",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/cargo-abm-custom"
+      },
+      {
+        "id": "cargo-abm-hubspot",
+        "title": "Cargo ABM HubSpot",
+        "group": "abm",
+        "platform": "cargo",
+        "destination": "hubspot",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/cargo-abm-hubspot"
+      },
+      {
+        "id": "cargo-abm-salesforce",
+        "title": "Cargo ABM Salesforce",
+        "group": "abm",
+        "platform": "cargo",
+        "destination": "salesforce",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/cargo-abm-salesforce"
+      },
+      {
+        "id": "cargo-abm-slack",
+        "title": "Cargo ABM Slack",
+        "group": "abm",
+        "platform": "cargo",
+        "destination": "slack",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/cargo-abm-slack"
+      },
+      {
+        "id": "claude-abm-custom",
+        "title": "Claude ABM Custom",
+        "group": "abm",
+        "platform": "claude",
+        "destination": "custom",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/claude-abm-custom"
+      },
+      {
+        "id": "claude-abm-hubspot",
+        "title": "Claude ABM HubSpot",
+        "group": "abm",
+        "platform": "claude",
+        "destination": "hubspot",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/claude-abm-hubspot"
+      },
+      {
+        "id": "claude-abm-salesforce",
+        "title": "Claude ABM Salesforce",
+        "group": "abm",
+        "platform": "claude",
+        "destination": "salesforce",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/claude-abm-salesforce"
+      },
+      {
+        "id": "claude-abm-slack",
+        "title": "Claude ABM Slack",
+        "group": "abm",
+        "platform": "claude",
+        "destination": "slack",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/claude-abm-slack"
+      },
+      {
+        "id": "clay-abm-custom",
+        "title": "Clay ABM Custom",
+        "group": "abm",
+        "platform": "clay",
+        "destination": "custom",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/clay-abm-custom"
+      },
+      {
+        "id": "clay-abm-hubspot",
+        "title": "Clay ABM HubSpot",
+        "group": "abm",
+        "platform": "clay",
+        "destination": "hubspot",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/clay-abm-hubspot"
+      },
+      {
+        "id": "clay-abm-salesforce",
+        "title": "Clay ABM Salesforce",
+        "group": "abm",
+        "platform": "clay",
+        "destination": "salesforce",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/clay-abm-salesforce"
+      },
+      {
+        "id": "clay-abm-slack",
+        "title": "Clay ABM Slack",
+        "group": "abm",
+        "platform": "clay",
+        "destination": "slack",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/clay-abm-slack"
+      },
+      {
+        "id": "n8n-abm-custom",
+        "title": "N8N ABM Custom",
+        "group": "abm",
+        "platform": "n8n",
+        "destination": "custom",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/n8n-abm-custom"
+      },
+      {
+        "id": "n8n-abm-hubspot",
+        "title": "N8N ABM HubSpot",
+        "group": "abm",
+        "platform": "n8n",
+        "destination": "hubspot",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/n8n-abm-hubspot"
+      },
+      {
+        "id": "n8n-abm-salesforce",
+        "title": "N8N ABM Salesforce",
+        "group": "abm",
+        "platform": "n8n",
+        "destination": "salesforce",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/n8n-abm-salesforce"
+      },
+      {
+        "id": "n8n-abm-slack",
+        "title": "N8N ABM Slack",
+        "group": "abm",
+        "platform": "n8n",
+        "destination": "slack",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/abm/n8n-abm-slack"
+      }
+    ]
+  },
+  {
+    "id": "extract-insights",
+    "title": "Extract Insights",
+    "summary": "Mine recorded calls and conversations for patterns, and post what the team should know to Slack.",
+    "axes": {
+      "voice": [
+        "customervoice",
+        "repvoice"
+      ]
+    },
+    "trigger_types": [],
+    "path": "architectures/extract-insights",
+    "builds": [
+      {
+        "id": "customervoice-slack",
+        "title": "Customer Voice Slack",
+        "group": "extract-insights",
+        "platform": "{{clay | cargo | claude | n8n | llm | \u2026}}",
+        "destination": "slack",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/extract-insights/customervoice-slack"
+      },
+      {
+        "id": "repvoice-slack",
+        "title": "Rep Voice Slack",
+        "group": "extract-insights",
+        "platform": "{{clay | cargo | claude | n8n | llm | \u2026}}",
+        "destination": "slack",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/extract-insights/repvoice-slack"
+      }
+    ]
+  },
+  {
+    "id": "outbound",
+    "title": "Outbound",
+    "summary": "Turn a qualified contact into outreach: an Octave-written email sequence, or a call talk track written back to the CRM.",
+    "axes": {
+      "platform": [
+        "clay",
+        "cargo",
+        "claude",
+        "n8n"
+      ],
+      "job": [
+        "email-sequencer",
+        "talktrack-crm"
+      ]
+    },
+    "trigger_types": [],
+    "path": "architectures/outbound",
+    "builds": [
+      {
+        "id": "cargo-email-sequencer",
+        "title": "Cargo Email Sequencer",
+        "group": "outbound",
+        "platform": "cargo",
+        "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/outbound/cargo-email-sequencer"
+      },
+      {
+        "id": "cargo-talktrack-crm",
+        "title": "Cargo Talk Track CRM",
+        "group": "outbound",
+        "platform": "cargo",
+        "destination": "crm",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/outbound/cargo-talktrack-crm"
+      },
+      {
+        "id": "claude-email-sequencer",
+        "title": "Claude Email Sequencer",
+        "group": "outbound",
+        "platform": "claude",
+        "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/outbound/claude-email-sequencer"
+      },
+      {
+        "id": "claude-talktrack-crm",
+        "title": "Claude Talk Track CRM",
+        "group": "outbound",
+        "platform": "claude",
+        "destination": "crm",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/outbound/claude-talktrack-crm"
+      },
+      {
+        "id": "clay-email-sequencer",
+        "title": "Clay Email Sequencer",
+        "group": "outbound",
+        "platform": "clay",
+        "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/outbound/clay-email-sequencer"
+      },
+      {
+        "id": "clay-talktrack-crm",
+        "title": "Clay Talk Track CRM",
+        "group": "outbound",
+        "platform": "clay",
+        "destination": "crm",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/outbound/clay-talktrack-crm"
+      },
+      {
+        "id": "n8n-email-sequencer",
+        "title": "N8N Email Sequencer",
+        "group": "outbound",
+        "platform": "n8n",
+        "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/outbound/n8n-email-sequencer"
+      },
+      {
+        "id": "n8n-talktrack-crm",
+        "title": "N8N Talk Track CRM",
+        "group": "outbound",
+        "platform": "n8n",
+        "destination": "crm",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/outbound/n8n-talktrack-crm"
+      }
+    ]
+  },
+  {
+    "id": "sales",
+    "title": "Sales",
+    "summary": "On-demand deal assets an AE asks an LLM for: one-pagers, call prep, account plans, and follow-ups, grounded in the Octave library.",
+    "axes": {},
+    "trigger_types": [],
+    "path": "architectures/sales",
+    "builds": [
+      {
+        "id": "llm-abm",
+        "title": "LLM ABM",
+        "group": "sales",
+        "platform": "llm",
+        "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/sales/llm-abm"
+      },
+      {
+        "id": "llm-callprep",
+        "title": "LLM Call Prep",
+        "group": "sales",
+        "platform": "llm",
+        "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/sales/llm-callprep"
+      },
+      {
+        "id": "llm-followup",
+        "title": "LLM Follow-Up",
+        "group": "sales",
+        "platform": "llm",
+        "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/sales/llm-followup"
+      },
+      {
+        "id": "llm-onepager",
+        "title": "LLM One-Pager",
+        "group": "sales",
+        "platform": "llm",
+        "destination": "{{slack | salesforce | hubspot | custom | \u2026}}",
+        "status": "stub",
+        "summary": "{{One sentence: what this build does, end to end.}}",
+        "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+        "triggers": [
+          "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+        ],
+        "inputs": [
+          "{{e.g. list of target domains}}"
+        ],
+        "outputs": [
+          "{{e.g. ranked account list posted to Slack}}"
+        ],
+        "systems": {
+          "required": [
+            "octave"
+          ],
+          "optional": [],
+          "swappable": {}
+        },
+        "octave_capabilities": [
+          "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+        ],
+        "uses_shared": [],
+        "complexity": "{{low | medium | high}}",
+        "setup_time": "{{e.g. 2 hours}}",
+        "tags": [],
+        "related": [],
+        "derived_from_builds": 0,
+        "last_updated": "2026-09-29",
+        "path": "architectures/sales/llm-onepager"
+      }
+    ]
+  }
+]

@@ -2,6 +2,8 @@
 
 Company-agnostic blueprints for GTM automations built on [Octave](https://octavehq.com). Each architecture started as a real build, was stripped of anything customer-specific, and was rebuilt to run on any environment that has credentials for the systems it needs.
 
+Architectures are **platform-specific**: each one is a job (ABM, outbound, …) built on one platform (Clay, Cargo, Claude, N8N, …) delivering to one destination (Slack, Salesforce, HubSpot, …). Architectures that do the same job sit together in a **group**, which holds the parts they share.
+
 Use them to:
 
 - **Get a head start.** Find the build closest to what you need, copy it, fill in your credentials and config.
@@ -15,16 +17,20 @@ See [CATALOG.md](CATALOG.md) for the full index (generated from each architectur
 ## Repo layout
 
 ```
-architectures/<build-id>/   one folder per architecture type
-  README.md                 what it does, who it's for, what you need
-  build.json                metadata used for search + the catalog
-  ARCHITECTURE.md           data flow, components, design decisions
-  SETUP.md                  step-by-step: credentials, config, deploy, test
-  .env.example              every credential the build reads (no values)
-  config/                   company-specific settings, as templates
-  src/                      code, workflow exports, prompts, agent configs
-  diagrams/                 optional visuals
-_template/                  starting point for a new architecture
+architectures/<group>/      one folder per job (abm, outbound, extract-insights, sales)
+  GROUP.md                  the job, shared contract, cross-build conventions
+  group.json                group metadata (axes, trigger types)
+  shared/                   components every build in the group uses
+  <build-id>/               one folder per platform-specific architecture
+    README.md               what it does, who it's for, what you need
+    build.json              metadata used for search + the catalog
+    ARCHITECTURE.md         data flow, components, design decisions
+    SETUP.md                step-by-step: credentials, config, deploy, test
+    .env.example            every credential the build reads (no values)
+    config/                 company-specific settings, as templates
+    src/                    code, workflow exports, prompts, agent configs
+    diagrams/               optional visuals
+_template/                  starting points for a new group and a new architecture
 scripts/                    catalog builder, scaffolder, scrub check
 ```
 
@@ -49,7 +55,8 @@ Run `python3 scripts/scrub_check.py` before every push. The pre-push hook runs i
 ## Contributing a new architecture
 
 ```bash
-python3 scripts/new_architecture.py <build-id>   # copies _template/
+python3 scripts/new_group.py <group-id> "Title"          # only for a new job type
+python3 scripts/new_architecture.py <group-id> <build-id> # copies _template/architecture/
 # fill in the files, then:
 python3 scripts/build_catalog.py                  # regenerates CATALOG.md + catalog.json
 python3 scripts/scrub_check.py                    # must pass

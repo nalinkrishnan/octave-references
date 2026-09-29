@@ -1,0 +1,36 @@
+{
+  "id": "n8n-abm-salesforce",
+  "title": "N8N ABM Salesforce",
+  "group": "abm",
+  "platform": "n8n",
+  "destination": "salesforce",
+  "status": "stub",
+  "summary": "{{One sentence: what this build does, end to end.}}",
+  "problem": "{{The GTM problem it solves, in the buyer's words.}}",
+  "triggers": [
+    "{{What starts a run: schedule, webhook, CRM event, web visit, list upload.}}"
+  ],
+  "inputs": [
+    "{{e.g. list of target domains}}"
+  ],
+  "outputs": [
+    "{{e.g. ranked account list posted to Slack}}"
+  ],
+  "systems": {
+    "required": [
+      "octave"
+    ],
+    "optional": [],
+    "swappable": {}
+  },
+  "octave_capabilities": [
+    "{{e.g. qualify_company, run_email_agent, deep_web_research}}"
+  ],
+  "uses_shared": [],
+  "complexity": "{{low | medium | high}}",
+  "setup_time": "{{e.g. 2 hours}}",
+  "tags": [],
+  "related": [],
+  "derived_from_builds": 0,
+  "last_updated": "2026-09-29"
+}

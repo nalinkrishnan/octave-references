@@ -1,0 +1,10 @@
+{
+  "id": "abm",
+  "title": "ABM",
+  "summary": "Pick the accounts worth working now, research them against the Octave library, and hand a ranked list with briefs to the team where they work.",
+  "axes": {
+    "platform": ["clay", "claude", "cargo", "n8n"],
+    "destination": ["slack", "salesforce", "hubspot", "custom"]
+  },
+  "trigger_types": ["scheduled", "web-visit", "wake-the-dead", "job-change", "buying-signal"]
+}

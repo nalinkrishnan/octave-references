@@ -1,0 +1,10 @@
+{
+  "id": "outbound",
+  "title": "Outbound",
+  "summary": "Turn a qualified contact into outreach: an Octave-written email sequence, or a call talk track written back to the CRM.",
+  "axes": {
+    "platform": ["clay", "cargo", "claude", "n8n"],
+    "job": ["email-sequencer", "talktrack-crm"]
+  },
+  "trigger_types": []
+}

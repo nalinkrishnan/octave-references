@@ -1,0 +1,9 @@
+{
+  "id": "extract-insights",
+  "title": "Extract Insights",
+  "summary": "Mine recorded calls and conversations for patterns, and post what the team should know to Slack.",
+  "axes": {
+    "voice": ["customervoice", "repvoice"]
+  },
+  "trigger_types": []
+}

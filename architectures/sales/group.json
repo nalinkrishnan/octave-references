@@ -1,0 +1,7 @@
+{
+  "id": "sales",
+  "title": "Sales",
+  "summary": "On-demand deal assets an AE asks an LLM for: one-pagers, call prep, account plans, and follow-ups, grounded in the Octave library.",
+  "axes": {},
+  "trigger_types": []
+}

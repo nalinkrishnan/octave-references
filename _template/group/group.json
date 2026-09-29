@@ -1,0 +1,7 @@
+{
+  "id": "{{group-id}}",
+  "title": "{{Group title}}",
+  "summary": "{{One sentence: the GTM job every build in this group does.}}",
+  "axes": {},
+  "trigger_types": []
+}
